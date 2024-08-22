@@ -11,22 +11,29 @@
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&display=swap"
     rel="stylesheet">
 
-  <!-- Tailwind CSS and DaisyUI CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
+  <!-- Tailwind CSS and DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Tailwind CSS Configuration -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'primary-color': '#ABEF5F',
+            'secondary-color': '#ABEF5F80',
+            'tertiary-color': '#737373',
+            'bg-color': '#E9E9E9',
+            'gradient-color': '#E1E1E1',
+          },
+          'background-Image': {
+            'paper-bg': "url('./assets/bg.jpg')"
           }
         }
       }
@@ -41,49 +48,85 @@
   </style>
 </head>
 <body class="manrope">
-  <header>
-    <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+  <!-- Header section start here -->
+  <header class="bg-gradient-to-b from-gradient-color to-white">
+    <!-- Navbar section start here -->
+    <nav class="w-11/12 mx-auto py-10">
+      <div class="navbar-content mx-4">
+        <div class="navbar flex justify-between items-center mx-auto">
+          <div class="navbar-start text-left">
+            <a class="flex items-center gap-2" href="index.html">
+              <i class="fa-solid fa-arrow-right-long -rotate-45 p-2 w-8 h-8 rounded-full bg-primary-color"></i>
+              <span class="logo text-2xl lg:text-3xl font-extrabold">Rinterio</span>
+            </a>           
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a>Item 1</a></li>
-            <li>
-              <a>Parent</a>
-              <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu-options flex gap-9 px-1 font-medium">
+              <li><a class="text-4 font-bold hover:transition duration-300 ease-in-out" href="#">Home</a></li>
+              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#">Services</a></li>
+              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#">Portfolio</a></li>
+              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#">Blogs</a></li>
+              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#">Contact Us</a>
+            </ul>
+          </div>
+          <div class="navbar-end flex">
+            <div class="item hidden md:flex gap-2 items-center">
+              <a href="#">
+                <i
+                  class="fa-solid fa-magnifying-glass p-2 bg-white rounded-full border-2 border-bg-color text-tertiary-color"></i></a>
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping p-2 bg-white rounded-full border-2 border-bg-color text-tertiary-color"></i>
+              </a>
+              <a href="#" class="btn bg-primary-color  rounded-3xl px-6">
+                <span class="font-extrabold">Book Consult</span>
+                <i class="fa-solid fa-arrow-right bg-neutral-900 text-white p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i></a>
+            </div>
+            <div class="dropdown lg:hidden relative ml-2">
+              <div tabindex="0" role="button" class="btn bg-white border-2 text-second-color rounded-full lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+                <li><a class="text-4 font-bold hover:font-bold transition duration-300 ease-in-out text-neutral-800"
+                    href="#">Home</a></li>
+                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#">Services</a>
+                </li>
+                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#">Portfolio</a>
+                </li>
+                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#">Blogs</a></li>
+                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#">Contact Us</a>
+                </li>
               </ul>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </nav>
+    <!-- Navbar section end here -->
+    <!-- Hero section start here -->
+    <div class="hero-section mb-14">
+      <div class="container w-10/12 mx-auto">
+        <div class="hero-content mx-3 flex flex-col justify-center">
+          <div class="hero-image">
+            <img class="mx-auto mb-5" src="./assets/banner.png" alt="">
+          </div>
+          <div class="hero-description md:w-10/12 mx-auto flex flex-col justify-center">
+            <h1 class="text-center text-2xl md:text-4xl lg:text-6xl font-black mb-5">A barn house of this design has a striking appearance</h1>
+            <p class="text-second-color text-3 md:text-4 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <div class="btn w-full md:w-52 bg-third-color border-first-color border-2 mx-auto mt-8 rounded-full">
+                <a class="flex items-center gap-2" href="#">
+                  <span class="text-xl">View Details</span>
+                  <i class="fa-solid fa-arrow-right bg-primary-color p-2 w-8 h-8 rotate-[-45deg] rounded-full">
+                  </i>
+                </a>
+            </div>
+          </div>
         </div>
-        <a class="btn btn-ghost text-xl">daisyUI</a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Item 1</a></li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </details>
-          </li>
-          <li><a>Item 3</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <a class="btn">Button</a>
       </div>
     </div>
+    <!-- Hero section end here -->
   </header>
+  <!-- Header section end here -->
   <main>
 
   </main>

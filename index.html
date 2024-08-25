@@ -39,7 +39,7 @@
             'fourth-card-color': '#77AAEA',
           },
           'background-Image': {
-            'paper-bg': "url('./assets/bg.jpg')"
+            'paper-img': "url('./assets/bg.jpg')"
           }
         }
       }
@@ -355,10 +355,76 @@
       </div>
     </section>
     <!-- Articles and News section end here -->
-    
+    <!-- Next Project section start here -->
+    <section class="next-project py-12 md:py-20 lg:py-28 bg-[url(./assets/bg.jpg)] bg-no-repeat bg-center bg-cover mt">
+      <div class="container w-4/5 mx-auto">
+        <div class="next-project-content mx-3">
+          <div class="next-project-title mb-6 lg:w-3/4 mx-auto flex flex-col justify-center items-center">
+            <div class="btn rounded-full bg-secondary-color">
+              <i class="fa-solid fa-arrow-right"></i>
+              <a class="text-4 font-bold" href="#">Let’s Connect</a>
+            </div>
+            <div class="next-project-texts w-3/4">
+              <h2 class="text-2xl md:text-4xl font-extrabold text-center my-4">Let’s Discuss Next Project</h2>
+              <p class="text-tertiary-color font-medium text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
+              metal accents.</p>
+            </div>
+          </div>
+          <div class="next-project-content">
+            <div class="next-project-form grid md:grid-cols-2 gap-6">
+              <input type="text" placeholder="First Name" required class="p-5 rounded-full">
+              <input type="text" placeholder="Last Name" required class="p-5 rounded-full">
+              <input type="tel" placeholder="Phone" required class="p-5 rounded-full">
+              <input type="email" placeholder="Email" required class="p-5 rounded-full">
+              <input type="text" placeholder="Write your message here" class="p-5 rounded-2xl md:col-span-2 pb-60">
+            </div>
+            <div class="next-project-btn w-full mt-8">
+              <a href="#" class="w-full btn bg-primary-color  rounded-3xl px-6">
+                <span class="font-extrabold">Book Consult</span>
+                <i class="fa-solid fa-arrow-right bg-neutral-900 text-white p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Next Project section end here -->
   </main>
-  <footer>
-
+  <footer class="footer py-12 md:py-20 lg:py-28 bg-neutral-900">
+    <div class="container w-4/5 mx-auto">
+      <div class="footer-content mx-auto flex flex-col justify-center items-center">
+        <div class="logo flex justify-center items-center">
+          <a class="flex items-center gap-2" href="index.html">
+            <i class="fa-solid fa-arrow-right bg-primary-color p-3 rotate-[-45deg] rounded-full">
+            </i>
+            <span class="font-extrabold text-3xl text-white">Rinterio</span>
+          </a>
+        </div>
+        <div class="footer-description">
+          <p class="text-tertiary-color font-medium text-4 my-4 md:w-2/3 text-center mx-auto">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+            weathered wood, sleek metal accents.
+          </p>    
+        </div>
+        <div class="nav-menu my-3">
+          <ul class="flex flex-col items-center md:flex-row gap-9 px-1">
+            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#">Home</a></li>
+            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#">Services</a>
+            </li>
+            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#">Portfolio</a>
+            </li>
+            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#">Blogs</a></li>
+            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-btn my-4">
+          <a href="#" class="btn bg-primary-color rounded-3xl px-6 border-none">
+            <span class="font-extrabold">Book Consult</span>
+            <i class="fa-solid fa-arrow-right bg-neutral-900 text-white p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i></a>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 

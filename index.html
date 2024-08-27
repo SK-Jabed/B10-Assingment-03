@@ -57,7 +57,7 @@
 
 <body class="manrope">
   <!-- Header section start here -->
-  <header class="bg-gradient-to-b from-gradient-color to-white">
+  <header id="home" class="bg-gradient-to-b from-gradient-color to-white">
     <!-- Navbar section start here -->
     <nav class="container mx-auto px-5 py-10">
       <div class="navbar-content mx-4">
@@ -70,11 +70,11 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu-options flex gap-9 px-1 font-medium">
-              <li><a class="text-4 font-bold hover:font-bold transition duration-300 ease-in-out" href="#">Home</a></li>
-              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold text-black" href="#">Services</a></li>
-              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#">Portfolio</a></li>
-              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#">Blogs</a></li>
-              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#">Contact Us</a>
+              <li><a class="text-4 font-bold hover:font-bold transition duration-300 ease-in-out" href="#home">Home</a></li>
+              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold text-black" href="#services">Services</a></li>
+              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#portfolio">Portfolio</a></li>
+              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#blogs">Blogs</a></li>
+              <li><a class="text-4 text-tertiary-color hover:transition duration-300 ease-in-out hover:font-bold" href="#contact-us">Contact Us</a>
             </ul>
           </div>
           <div class="navbar-end flex">
@@ -96,13 +96,13 @@
               <ul tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
                 <li><a class="text-4 font-bold hover:font-bold transition duration-300 ease-in-out text-neutral-800"
-                    href="#">Home</a></li>
-                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#">Services</a>
+                    href="#home">Home</a></li>
+                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#services">Services</a>
                 </li>
-                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#">Portfolio</a>
+                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#portfolio">Portfolio</a>
                 </li>
-                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#">Blogs</a></li>
-                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#">Contact Us</a>
+                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#blogs">Blogs</a></li>
+                <li><a class="text-4 hover:font-bold transition duration-300 ease-in-out text-second-color" href="#contact-us">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -180,7 +180,7 @@
     <!-- Design section end here -->
     <!-- About section start here -->
     <section class="about">
-      <div class="container w-4/5 mx-auto bg-white rounded-xl">
+      <div class="container mx-auto px-5 bg-white rounded-xl">
         <div class="all-content mx-3 grid md:grid-cols-2 lg:grid-cols-4 gap-5 p-6 ">
           <div class="card-item flex flex-col justify-center items-center p-7">
             <i class="fa-regular fa-message mb-2 text-4xl text-second-color"></i>
@@ -207,8 +207,8 @@
     </section>
     <!-- About section end here -->
     <!-- Works Process section start here -->
-    <section class="works-process py-12 md:py-20 lg:py-28">
-      <div class="container w-4/5 mx-auto">
+    <section id="services" class="works-process py-12 md:py-20 lg:py-28">
+      <div class="container mx-auto px-5 md:px-5 lg:px-12">
         <div class="work-process-content mx-3">
           <div class="works-process-heading mb-8 lg:w-2/3 mx-auto flex flex-col justify-center items-center">
             <div class="btn mb-4 bg-white rounded-full">
@@ -217,9 +217,8 @@
             </div>
             <div class="works-process-title w-3/4 mx-auto">
               <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-center mb-3">Our Works Process</h2>
-              <p class="font-medium text-center text-tertiary-color">The barn house captivates with its blend of rustic charm
-                and modern sophistication, featuring weathered wood, sleek
-                metal accents.</p>
+              <p class="font-medium text-center text-tertiary-color">Learn about our seamless work process, designed to turn your vision into reality with precision and creativity. From
+              initial consultation to final installation.</p>
             </div>
           </div>
           <div class="card-items grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -265,8 +264,8 @@
     </section>
     <!-- Works Process section end here -->
     <!-- Latest Portfolio section start here -->
-    <section class="latest-portfolio py-12 md:py-20 lg:py-28 lg:bg-white">
-      <div class="container w-4/5 mx-auto">
+    <section id="portfolio" class="latest-portfolio py-12 md:py-20 lg:py-28 lg:bg-white">
+      <div class="container mx-auto px-5 md:px-5 lg:px-12">
         <div class="latest-portfolio-content mx-3">
           <div class="latest-portfolio-title mb-6 lg:w-2/3 mx-auto flex flex-col justify-center items-center">
             <div class="btn bg-secondary-color rounded-full">
@@ -275,7 +274,8 @@
             </div>
             <div class="latest-portfolio-texts w-3/4">
               <h1 class="text-2xl md:text-4xl font-extrabold my-4 text-center">Our Latest Portfolio</h1>
-              <p class="text-tertiary-color text-4 text-center font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              <p class="text-tertiary-color text-4 text-center font-medium">Browse our portfolio to see our creative vision in action. From modern homes to stylish offices, explore the spaces
+              we've transformed with our expert interior design.</p>
             </div>
           </div>
           <div class="card-items grid grid-cols-2 gap-5 mt-3 lg:grid-cols-12 lg:grid-rows-2">
@@ -325,8 +325,8 @@
     </section>
     <!-- Latest Portfolio section end here -->
     <!-- Our Articles and News section start here -->
-    <section class="our-articles py-8 md:py-20 lg:py-28">
-      <div class="container w-4/5 mx-auto">
+    <section id="blogs" class="our-articles py-8 md:py-20 lg:py-24">
+      <div class="container mx-auto px-5 md:px-8 lg:px-12">
         <div class="our-articles-content mx-3">
           <div class="articles-heading mb-6 lg:w-2/3 mx-auto flex flex-col justify-center items-center">
             <div class="btn bg-secondary-btn-color rounded-full">
@@ -335,7 +335,7 @@
             </div>
             <div class="articles-title w-3/4 mx-auto">
               <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-center my-4">Read Our Articles and News</h2>
-              <p class="font-medium text-center text-tertiary-color mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              <p class="font-medium text-center text-tertiary-color mb-8">Explore our latest articles for expert insights and inspiration. Stay updated with trends and creative ideas to transform your home or office.</p>
             </div>
           </div>
           <div class="articles-cards flex flex-col lg:flex-row justify-center items-center gap-6">
@@ -359,7 +359,7 @@
                   <p class="text-tertiary-color font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
                 <div class="card-btn mt-4 transition duration-300 ease-in-out hover:translate-y-[-0.25rem] transform ">
-                  <a class="text-xl font-bold" href="#">Read More<i class="fa-solid fa-arrow-right bg-primary-color p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i>
+                  <a class="text-xl font-bold" href="#">Read More<i class="fa-solid fa-arrow-right bg-primary-color ml-1 p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i>
                 </div>
               </div>
             </div>
@@ -375,7 +375,7 @@
                   </div>
                   <div class="admin-icon">
                     <i class="fa-regular fa-user text-tertiary-color"></i>
-                    <a class="text-3 text-tertiary-color font-medium" href="#">By Admin</a>
+                    <a class="text-3 text-tertiary-color font-medium pt-1" href="#">By Admin</a>
                   </div>
                 </div>
                 <div class="card-texts">
@@ -385,7 +385,7 @@
                 </div>
                 <div class="card-btn mt-4 transition duration-300 ease-in-out hover:translate-y-[-0.25rem] transform ">
                   <a class="text-xl font-bold" href="#">Read More<i
-                      class="fa-solid fa-arrow-right bg-primary-color p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i>
+                      class="fa-solid fa-arrow-right bg-primary-color ml-1 p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i>
                 </div>
               </div>
             </div>
@@ -411,7 +411,7 @@
                 </div>
                 <div class="card-btn mt-4 transition duration-300 ease-in-out hover:translate-y-[-0.25rem] transform ">
                   <a class="text-xl font-bold" href="#">Read More<i
-                      class="fa-solid fa-arrow-right bg-primary-color p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i>
+                      class="fa-solid fa-arrow-right bg-primary-color ml-1 p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i>
                 </div>
               </div>
             </div>
@@ -422,7 +422,7 @@
     <!-- Articles and News section end here -->
     <!-- Testimonial section start here -->
     <section class="testimonial py-12 md:py-20 lg:py-28 bg-white">
-      <div class="container mx-auto px-5 lg:px-20">
+      <div class="container mx-auto px-5 lg:px-12">
         <div class="testimonial-content mx-3">
           <div class="testimonial-title mb-6 lg:w-3/4 mx-auto flex flex-col justify-center items-center">
             <div class="btn rounded-full bg-secondary-color">
@@ -431,10 +431,7 @@
             </div>
             <div class="next-project-texts w-3/4">
               <h2 class="text-2xl md:text-4xl font-extrabold text-center my-4">What Our Clients Say</h2>
-              <p class="text-tertiary-color font-medium text-center">The barn house captivates with its blend of rustic
-                charm and
-                modern sophistication, featuring weathered wood, sleek
-                metal accents.</p>
+              <p class="text-tertiary-color font-medium text-center">Read what our clients have to say about their experiences working with us. Discover how we've transformed spaces.</p>
             </div>
           </div>
           <div class="card-items grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -581,8 +578,8 @@
     </section>
     <!-- Testimonial section end here -->
     <!-- Next Project section start here -->
-    <section class="next-project py-12 md:py-20 lg:py-28 bg-[url(./assets/bg.jpg)] bg-no-repeat bg-center bg-cover mt">
-      <div class="container w-4/5 mx-auto">
+    <section id="contact-us" class="next-project py-12 md:py-20 lg:py-28 bg-[url(./assets/bg.jpg)] bg-no-repeat bg-center bg-cover">
+      <div class="container mx-auto px-4 lg:px-20 py-6">
         <div class="next-project-content mx-3">
           <div class="next-project-title mb-6 lg:w-3/4 mx-auto flex flex-col justify-center items-center">
             <div class="btn rounded-full bg-secondary-color">
@@ -591,22 +588,21 @@
             </div>
             <div class="next-project-texts w-3/4">
               <h2 class="text-2xl md:text-4xl font-extrabold text-center my-4">Let’s Discuss Next Project</h2>
-              <p class="text-tertiary-color font-medium text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
-              metal accents.</p>
+              <p class="text-tertiary-color font-medium text-center">Get in touch to start your design journey today. We're here to bring your vision to life with expert guidance.</p>
             </div>
           </div>
           <div class="next-project-content">
             <div class="next-project-form grid md:grid-cols-2 gap-6">
-              <input type="text" placeholder="First Name" required class="p-5 rounded-full">
-              <input type="text" placeholder="Last Name" required class="p-5 rounded-full">
-              <input type="tel" placeholder="Phone" required class="p-5 rounded-full">
-              <input type="email" placeholder="Email" required class="p-5 rounded-full">
+              <input type="text" placeholder="First Name*" required class="p-5 rounded-full">
+              <input type="text" placeholder="Last Name*" required class="p-5 rounded-full">
+              <input type="tel" placeholder="Phone*" required class="p-5 rounded-full">
+              <input type="email" placeholder="Email*" required class="p-5 rounded-full">
               <input type="text" placeholder="Write your message here" class="p-5 rounded-2xl md:col-span-2 pb-60">
             </div>
             <div class="next-project-btn w-full mt-8">
               <a href="#" class="w-full btn bg-primary-color  rounded-3xl px-6">
-                <span class="font-extrabold">Book Consult</span>
-                <i class="fa-solid fa-arrow-right bg-neutral-900 text-white p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i>
+                <span class="font-extrabold text-base">Send Mail</span>
+                <i class="fa-solid fa-arrow-right-long bg-neutral-900 text-white p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i>
               </a>
             </div>
           </div>
@@ -615,38 +611,36 @@
     </section>
     <!-- Next Project section end here -->
   </main>
-  <footer class="footer py-12 md:py-20 lg:py-28 bg-neutral-900">
-    <div class="container w-4/5 mx-auto">
+  <footer class="footer px-6 py-12 md:py-20 lg:py-28 bg-neutral-900 mt-1">
+    <div class="container mx-auto">
       <div class="footer-content mx-auto flex flex-col justify-center items-center">
         <div class="logo flex justify-center items-center md:mb-2">
           <a class="flex items-center gap-2" href="index.html">
-            <i class="fa-solid fa-arrow-right bg-primary-color p-3 rotate-[-45deg] rounded-full">
+            <i class="fa-solid fa-arrow-right-long bg-primary-color p-3 rotate-[-45deg] rounded-full">
             </i>
             <span class="font-extrabold text-3xl text-white">Rinterio</span>
           </a>
         </div>
         <div class="footer-description">
           <p class="text-tertiary-color font-medium text-4 my-4 md:w-2/3 text-center mx-auto">
-            The barn house captivates with its blend of rustic charm and modern sophistication, featuring
-            weathered wood, sleek metal accents.
-          </p>    
+            Crafting spaces that reflect your unique style and personality. At Rinterio, we turn your interior design dreams into reality with expert craftsmanship.</p>    
         </div>
-        <div class="nav-menu my-3 md:mt-10">
+        <div class="nav-menu my-3 md:mt-8">
           <ul class="flex flex-col justify-center items-center md:flex-row gap-9 md:gap-20 lg:gap-28 px-1">
-            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#">Home</a></li>
-            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#">Services</a>
+            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#home">Home</a></li>
+            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#services">Services</a>
             </li>
-            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#">Portfolio</a>
+            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#portfolio">Portfolio</a>
             </li>
-            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#">Blogs</a></li>
-            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#">Contact Us</a>
+            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#blogs">Blogs</a></li>
+            <li><a class="text-4 text-neutral-300 transition duration-300 ease-in-out hover:text-white" href="#contact-us">Contact Us</a>
             </li>
           </ul>
         </div>
         <div class="footer-btn my-6 md:mt-10">
           <a href="#" class="btn bg-primary-color rounded-3xl px-6 border-none">
             <span class="font-extrabold">Book Consult</span>
-            <i class="fa-solid fa-arrow-right bg-neutral-900 text-white p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i></a>
+            <i class="fa-solid fa-arrow-right-long bg-neutral-900 text-white p-2 w-8 h-8 rotate-[-45deg] rounded-full"></i></a>
         </div>
       </div>
     </div>
